@@ -1,0 +1,68 @@
+body {
+  margin: 5px;
+}
+
+.header {
+  background-color: lightgray;
+  margin: 5px;
+}
+
+.header-title {
+  margin: 5px;
+  padding-left: 5px;
+  color: #666;
+}
+
+.bundesländer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content {
+  display: block;
+  text-decoration: none;
+  border: 5px solid lightgray;
+  color: black;
+  padding: 10px;
+  width: calc(33% - 10px);
+  box-sizing: border-box;
+  margin: 5px;
+}
+
+.content:hover {
+  border: 5px solid gray;
+}
+
+#letterBox {
+  display: flex;
+  gap: 10px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.letter {
+  background-color: lightgray;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.textGray {
+  color: lightgray;
+}
+
+@media (max-width: 800px) {
+  .content {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 500px) {
+  .content {
+    width: calc(100% - 10px);
+  }
+}
